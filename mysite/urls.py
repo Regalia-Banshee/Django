@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from polls.views import welcome
+
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("something_interesting/",welcome,name="welcome"),
 ]
